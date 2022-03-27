@@ -11,6 +11,8 @@ class Post extends Model
 
     protected $guarded = [];
 
+    protected $with = ['category', 'author'];
+
     public function category()
     {
         //hasOne, hasMany, belongsTo, belongsToMany
@@ -20,5 +22,10 @@ class Post extends Model
     public function getRouteKeyName() : string
     {
         return 'slug';
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }
