@@ -1,4 +1,6 @@
-﻿<x-layout>
+﻿
+
+<x-layout>
     <article>
         <h1>
             {!! $post->title !!}
