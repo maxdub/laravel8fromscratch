@@ -21,12 +21,6 @@ class Post extends Model
 
     public function getRouteKeyName(): string
     {
-        if ($var = 0){
-            if ($var2 = 2){
-
-            }
-        }
-
         return 'slug';
     }
 
